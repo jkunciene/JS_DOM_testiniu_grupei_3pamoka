@@ -4,6 +4,7 @@ const svarba = document.querySelector('#priority');
 const rezultatams = document.querySelector('tbody');
 
 const forma = document.querySelector('form');
+const lentele = document.querySelector('table');
 
 console.log(rezultatams);
 
@@ -25,6 +26,8 @@ function addToDo(){
         console.log(darbas.value);
         console.log(svarba.value);
 
+        // rodau rezultatu lentele
+        lentele.className = 'visible table mt-5 ';
         // sukuriu eilute vienai darbu eigai spausdinti
         const eilute = document.createElement('tr');
         // eilute pridedu i sukurta table
